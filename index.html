@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-200">
+    <div class="calculator bg-gray-800 rounded-lg max-w-md overflow-hidden">
+        <input id="display" class="w-full bg-gray-900 text-left p-5 text-2xl text-white border-none" readonly>
+        <div class="keys grid grid-cols-4 gap-4 p-5">
+            <button onclick="appendToDisplay('+')" class="operator-btn bg-yellow-500 text-white text-2xl font-bold p-6 rounded-full hover:bg-yellow-600 active:bg-yellow-700">+</button>
+            <button onclick="appendToDisplay('7')" class="bg-gray-900 text-white text-2xl font-bold p-6 rounded-full hover:bg-gray-600 active:bg-gray-700">7</button>
+            <button onclick="appendToDisplay('8')" class="bg-gray-900 text-white text-2xl font-bold p-6 rounded-full hover:bg-gray-600 active:bg-gray-700">8</button>
+            <button onclick="appendToDisplay('9')" class="bg-gray-900 text-white text-2xl font-bold p-6 rounded-full hover:bg-gray-600 active:bg-gray-700">9</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn bg-yellow-500 text-white text-2xl font-bold p-6 rounded-full hover:bg-yellow-600 active:bg-yellow-700">-</button>
+            <button onclick="appendToDisplay('4')" class="bg-gray-900 text-white text-2xl font-bold p-6 rounded-full hover:bg-gray-600 active:bg-gray-700">4</button>
+            <button onclick="appendToDisplay('5')" class="bg-gray-900 text-white text-2xl font-bold p-6 rounded-full hover:bg-gray-600 active:bg-gray-700">5</button>
+            <button onclick="appendToDisplay('6')" class="bg-gray-900 text-white text-2xl font-bold p-6 rounded-full hover:bg-gray-600 active:bg-gray-700">6</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn bg-yellow-500 text-white text-2xl font-bold p-6 rounded-full hover:bg-yellow-600 active:bg-yellow-700">*</button>
+            <button onclick="appendToDisplay('1')" class="bg-gray-900 text-white text-2xl font-bold p-6 rounded-full hover:bg-gray-600 active:bg-gray-700">1</button>
+            <button onclick="appendToDisplay('2')" class="bg-gray-900 text-white text-2xl font-bold p-6 rounded-full hover:bg-gray-600 active:bg-gray-700">2</button>
+            <button onclick="appendToDisplay('3')" class="bg-gray-900 text-white text-2xl font-bold p-6 rounded-full hover:bg-gray-600 active:bg-gray-700">3</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn bg-yellow-500 text-white text-2xl font-bold p-6 rounded-full hover:bg-yellow-600 active:bg-yellow-700">/</button>
+            <button onclick="appendToDisplay('0')" class="bg-gray-900 text-white text-2xl font-bold p-6 rounded-full hover:bg-gray-600 active:bg-gray-700">0</button>
+            <button onclick="appendToDisplay('.')" class="bg-gray-900 text-white text-2xl font-bold p-6 rounded-full hover:bg-gray-600 active:bg-gray-700">.</button>
+            <button onclick="calculate()" class="bg-blue-500 text-white text-2xl font-bold p-6 rounded-full hover:bg-blue-600 active:bg-blue-700">=</button>
+            <button onclick="clearDisplay()" class="operator-btn bg-yellow-500 text-white text-2xl font-bold p-6 rounded-full hover:bg-yellow-600 active:bg-yellow-700">C</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
